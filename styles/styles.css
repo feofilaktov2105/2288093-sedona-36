@@ -215,18 +215,43 @@ body {
   text-align: center;
 }
 
-/*.advantages-list {
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
 
-}*/
 
 
+
+/*ПОЗИЦИОНИРОВАНИЕ В СПИСКЕ ПРЕИМУЩЕСТВ*/
+
+/*Обертка первого элемента в списке преимуществ. Настояший городок.*/
+.advantages-true-city {
+  display: flex;
+}
+
+/*Обертка последнего элемента в списке преимуществ. Мост дьявола.*/
+.advantages-devils-bridge {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/*Квадратик с описанием преимуществ*/
+.advantages-square-box {
+  width: 400px;
+  height: 385px;
+}
+
+
+
+
+/*СТИЛИЗАЦИЯ В СПИСКЕ ПРЕИМУЩЕСТВ*/
 /*Элемент списока преимуществ*/
 .advantages-item {
   background-color: rgba(130, 179, 211, 1);
   color: #ffffff;
-
-  /*width: 4000px;
-  height: 385px;*/
 }
 
 .advantages-item-square,

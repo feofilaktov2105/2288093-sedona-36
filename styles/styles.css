@@ -226,7 +226,6 @@ body {
 
 
 /*ПОЗИЦИОНИРОВАНИЕ В СПИСКЕ ПРЕИМУЩЕСТВ*/
-
 /*Обертка первого элемента в списке преимуществ. Настояший городок.*/
 .advantages-true-city {
   display: flex;
@@ -247,11 +246,15 @@ body {
 
 
 
+
+
 /*СТИЛИЗАЦИЯ В СПИСКЕ ПРЕИМУЩЕСТВ*/
 /*Элемент списока преимуществ*/
 .advantages-item {
   background-color: rgba(130, 179, 211, 1);
   color: #ffffff;
+
+  list-style-type: none;
 }
 
 .advantages-item-square,
@@ -270,7 +273,6 @@ body {
   color: #333333;
 }
 
-
 /*Заголовок в списке преимуществ*/
 .advantages-title,
 .service-title,
@@ -280,6 +282,22 @@ body {
   font-size: 24px;
   line-height: 28px;
 }
+
+
+
+
+
+/*ПОЗИЦИОНИРОВАНИЕ В СПИСКЕ СЕРВИСА*/
+.service-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+
 
 /*Секция с предложением приехать в Седону и сервисом*/
 .services {
@@ -443,6 +461,13 @@ body {
 .page-footer {
   color: #000000;
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-social-list {
+  display: flex;
+  list-style-type: none;
 }
 
 /*Первый элемент в списке соц сетей. ВКонтакте*/
